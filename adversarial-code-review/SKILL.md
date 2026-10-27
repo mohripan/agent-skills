@@ -138,7 +138,9 @@ that will not fire.
 - **GitLab:** a closing pattern (`Closes #N`, and by default the forms of close, fix, resolve and
   implement) in the MR description or in a commit message closes the item when the MR merges
   into the project's default branch, provided the project closes referenced issues automatically.
-  The MR's list of issues it closes shows what will happen.
+  The MR's list of issues it closes shows what will happen. The pattern matches inside backticks
+  too, so a description that quotes someone else's closing line closes that item; read the list
+  back after writing a description.
 - **GitHub:** a closing keyword (close, closes, closed, fix, fixes, fixed, resolve, resolves,
   resolved) in the pull request description links the issue and closes it only when the pull
   request merges into the repository's default branch. A pull request into any other branch closes
